@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'crispy_forms',
     'matchapp',
-    'github_storages',
+    'django-github-s3',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
