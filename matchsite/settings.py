@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'crispy_forms',
     'matchapp',
+    'github_storages',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -175,3 +176,7 @@ LOGGING = {
     }
 }
 
+DEFAULT_FILE_STORAGE = "github_storages.backend.BackendStorages"
+GITHUB_HANDLE = "Amaiirr"
+GITHUB_REPO_NAME = "datingapp"
+ACCESS_TOKEN = "01a0b5801c5ff6d0e5b99aa092e7394aae59c5c5"
