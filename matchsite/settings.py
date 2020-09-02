@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ['127.0.0.1','datingsiteapp.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'cloudinary_storage',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'crispy_forms',
     'matchapp',
+    'cloudinary',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -151,6 +153,14 @@ MEDIA_URL = '/media/'
 # Activate Django-Heroku.
 django_heroku.settings(locals())
 
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'hdqucskjb',
+    'API_KEY': '228723424635628',
+    'API_SECRET': 'peZ2T5Gk-VIQH2KGVUaO99wknD0',
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+# Logging
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
